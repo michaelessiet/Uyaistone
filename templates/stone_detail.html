@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>Uyaistone:{{stone.stone}}</title>
+{% endblock title %}
+    
+{% block content %}
+    <h1 style="font-family: montserrat; margin-left: 2vw;" class="text-center">{{stone.stone}}</h1>
+    <div class="row no-gutters">
+        <div class="col-md-8 ">
+            <img src="{{ stone.images.url }}" alt="" width="100%">
+            <img src="{{ stone.images2.url }}" alt="" width="100%">
+            <img src="{{ stone.images3.url }}" alt="" width="100%">
+        </div>
+        <div class="col-md-4">
+            <h5 style=" font-family: montserrat;" class="text-center">About this stone:</h5>
+            <p style=" margin:2vw; font-family: montserrat;" class="text-center">{{ stone.description }}</p>
+        </div>
+        
+    </div>
+{% endblock content %}
+    

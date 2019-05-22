@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    <title>Uyaistone:Stones</title>
+{% endblock title %}
+    
+
+{% block content %}
+    <h1 style="font-family: montserrat; margin-left: 2vw;" class="text-center">Stones</h1>
+    <div class="row no-gutters">
+        {% for stone in stones %}
+            <div class="col-md-4" style="font-family:montserrat;">
+                <div class="card mb-2">
+                    <img class="card-img-top" src="{{ stone.images.url }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ stone.stone }}</h5>
+                        <p class="card-text">{{ stone.shortdesc }}</p>
+                        <a href="{% url 'stone_detail' stone.pk %}" class="btn btn-outline-danger">Read More</a>
+
+                    </div>
+
+                </div>
+            </div>
+        {% endfor %}
+            
+    </div>
+{% endblock content %}
+    

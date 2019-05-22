@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+	<title>Uyaistone:Home</title>
+{% endblock title %}
+	
+
+{% block content %}
+	<style>
+		body{
+			background-image: url("{% static 'images/slides/2tH9OUvfBr.jpg' %}") ;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-blend-mode:normal;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	
+	<div >
+		<style>
+	
+
+			@keyframes appear{
+				0%{
+					opacity: 0;
+					}
+				100%{
+					transform: rotate(xx);
+					opacity: 1;
+					}
+			}
+
+			.welcome{
+				color : black;
+				font-size: 2.5rem;
+				animation: appear 2s forwards 0s linear;
+				font-family: pacifico;
+				margin-top:2vh;
+			}	
+			.psalm{
+				color:black;
+				font-size: 1rem;
+				opacity: 0;
+				font-family:montserrat;
+				animation: appear 2s forwards 2s linear;
+				
+			}	
+			.section1{
+				box-shadow: 0 0 8px 1px black;
+				width: auto;
+				height:auto;
+				padding-top: 1vh;
+				padding-bottom: 1vh;
+				background-color: rgb(207, 207, 207);
+				margin-top:37vh;
+				font-family: montserrat;
+			}
+			.Mission{
+				font-size: 30px;
+				
+			}
+			span{
+				color: black;	
+			}
+			.border{
+				box-shadow: 0 0 8px 1px black;
+				background-color: rgb(218, 218, 218);
+				color: red;
+				height: inherit;
+				width: auto;
+				position: relative;
+				margin-top: 25vh;
+				margin-right: 25vw;
+				margin-left: 25vw;
+			}
+		</style>
+		<section class="border">
+		<div class="text-center">
+		<h1 class="welcome">Welcome To Uyaistone</h1>
+		<p class="psalm">A Psalmstone subsidiary</p>
+		</div>
+		</section>
+	</div>	
+	
+	<div>
+		<style>
+			.icons{
+				position: relative;
+				margin-left: 90vw;
+				top: -20vh;
+			}
+		</style>
+	
+		<p class="icons"><a href="https://www.instagram.com/uyaistone"><span class="fab fa-instagram fa-2x btn-outline-danger"></span></a></p>
+		
+		<p class="icons"><a href="https://web.facebook.com/pat.essiet5"><span class="fab fa-facebook fa-2x btn-outline-primary"></span></a></p>
+		
+		<p class="icons"><a href="https://api.whatsapp.com/send?phone=234803301104"><span class="fab fa-whatsapp fa-2x btn-outline-success"></span></a></p>
+		
+	</div>
+	<section class="section1">
+		<div class="text-center">
+			<h1 class="Mission" style="font-family: pacifico">What we do</h1>
+			<p style="margin-left: 4vw; margin-right: 4vw;">Consumers seek stones having higher quality in tensile and compressive strength, diversity in design & colour with affordable price tag. These days due to different reasons such as: low quality of natural stones, no adherence to substrate in a long term, higher moisture absorption, low resistance to current climate change, limited sources to extract couple with environmental factors, limited colours and designs, pollution permeation into internal tissues of stone, turbidity in long term makes using engineered stone with suitable quality and pricing a replacement of natural stone.
+
+					Psalmstone is the new idea in the construction industry, making the mix of mineral, natural and chemical-polymer materials with uses of alteration in molecular tissues of Type 1 marble cement (crystallization) to cause polymerization reactions.
+					
+					By changing molecular tissues, materials would be 2-3 times stronger than concrete and 2 times stronger than natural stones having high adherence and compressive strength, lower moisture absorption, resistance against turbidity into molecular tissues of stone. Etc.
+					
+					Furthermore, products are available in a vast spectrum due to usage of various designs, colours, with these the traditional problem of natural stone is solved.</p>
+		</div>
+	</section>
+
+
+{% endblock content %}
+	
